@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Meditation App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app">
+        <h1>🧘 Meditation Timer</h1>
+
+        <div class="breathing-circle" id="circle">
+            <span id="time">05:00</span>
+        </div>
+
+        <div class="controls">
+            <button onclick="setTime(300)">5 Min</button>
+            <button onclick="setTime(600)">10 Min</button>
+            <button onclick="setTime(900)">15 Min</button>
+        </div>
+
+        <div class="controls">
+            <button onclick="startTimer()">Start</button>
+            <button onclick="pauseTimer()">Pause</button>
+            <button onclick="resetTimer()">Reset</button>
+        </div>
+
+        <div class="sounds">
+            <select id="soundSelect" onchange="changeSound()">
+                <option value="rain.mp3">Rain</option>
+                <option value="ocean.mp3">Ocean</option>
+                <option value="forest.mp3">Forest</option>
+            </select>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
